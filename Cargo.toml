@@ -90,7 +90,7 @@ zero_sized_map_values = "warn"
 
 [package]
 name = "env_logger"
-version = "0.11.7"
+version = "0.11.8"
 description = """
 A logging implementation for `log` which is configured via an environment
 variable.
@@ -127,7 +127,7 @@ unstable-kv = ["log/kv"]
 [dependencies]
 log = { version = "0.4.21", features = ["std"] }
 env_filter = { version = "0.1.0", path = "crates/env_filter", default-features = false }
-humantime = { git="https://github.com/czlabinger/humantime.git", optional=true }
+humantime = { git="https://github.com/czlabinger/humantime.git", tag="2.2", optional=true }
 anstream = { version = "0.6.11", default-features = false, features = ["wincon"], optional = true }
 anstyle = { version = "1.0.6", optional = true }
 
